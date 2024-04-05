@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: sqs-integration
+  cloud:
+    aws:
+      credentials:
+        access-key:
+        secret-key:
+      region:
+        static: us-east-1
+      sqs:
+        region: us-east-1
+
+queue:
+  consumer: sqs-sdk-consumer-example.fifo
